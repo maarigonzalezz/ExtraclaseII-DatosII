@@ -87,6 +87,10 @@ int main() {
     auto bc4 = medida.measureTime(alg, best_case3);
     cout << "(" << N4 << " ," << bc4 << ")" << endl;
 
+    //Par ordenado 5
+    auto bc5 = medida.measureTime(alg, best_case3);
+    cout << "(" << N5 << " ," << bc5 << ")" << endl;
+
 
     cout << endl << "CASO PROMEDIO" << endl;
     //Par ordenado 1
@@ -105,6 +109,10 @@ int main() {
     auto avg4 = medida.measureTime(alg, avg_case4);
     cout << "(" << N4 << " ," << avg4 << ")" << endl;
 
+    //Par ordenado 5
+    auto avg5 = medida.measureTime(alg, avg_case4);
+    cout << "(" << N5 << " ," << avg5 << ")" << endl;
+
 
     cout << endl << "PEOR CASO" << endl;
     //Par ordenado 1
@@ -122,6 +130,10 @@ int main() {
     //Par ordenado 4
     auto wc4 = medida.measureTime(alg, avg_case4);
     cout << "(" << N4 << " ," << wc4 << ")" << endl;
+
+    //Par ordenado 5
+    auto wc5 = medida.measureTime(alg, avg_case4);
+    cout << "(" << N5 << " ," << wc5 << ")" << endl;
 
 
 
