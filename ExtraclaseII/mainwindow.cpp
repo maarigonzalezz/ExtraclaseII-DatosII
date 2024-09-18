@@ -90,18 +90,19 @@ void MainWindow::createChart(const QString &algName)
     generate(avg_case5.begin(), avg_case5.end(), std::rand);
 
     MeasureTime medida;
-    auto bc1 = medida.measureTime(alg, best_case1);
-    auto bc2 = medida.measureTime(alg, best_case2);
-    auto bc3 = medida.measureTime(alg, best_case3);
-    auto bc4 = medida.measureTime(alg, best_case4);
-    auto bc5 = medida.measureTime(alg, best_case5);
 
-    // Agregar datos a las series, pares ordenados
-    seriesBest->append(N1, bc1);
-    seriesBest->append(N2, bc2);
-    seriesBest->append(N3, bc3);
-    seriesBest->append(N4, bc4);
-    seriesBest->append(N5, bc5);
+    auto wc1 = medida.measureTime(alg, worst_case1);
+    auto wc2 = medida.measureTime(alg, worst_case2);
+    auto wc3 = medida.measureTime(alg, worst_case3);
+    auto wc4 = medida.measureTime(alg, worst_case4);
+    auto wc5 = medida.measureTime(alg, worst_case5);
+
+    seriesWorst->append(N1, wc1);
+    seriesWorst->append(N2, wc2);
+    seriesWorst->append(N3, wc3);
+    seriesWorst->append(N4, wc4);
+    seriesWorst->append(N5, wc5);
+
 
     auto avg1 = medida.measureTime(alg, avg_case1);
     auto avg2 = medida.measureTime(alg, avg_case2);
@@ -116,17 +117,19 @@ void MainWindow::createChart(const QString &algName)
     seriesAverage->append(N5, avg5);
 
 
-    auto wc1 = medida.measureTime(alg, worst_case1);
-    auto wc2 = medida.measureTime(alg, worst_case2);
-    auto wc3 = medida.measureTime(alg, worst_case3);
-    auto wc4 = medida.measureTime(alg, worst_case4);
-    auto wc5 = medida.measureTime(alg, worst_case5);
+    auto bc1 = medida.measureTime(alg, best_case1);
+    auto bc2 = medida.measureTime(alg, best_case2);
+    auto bc3 = medida.measureTime(alg, best_case3);
+    auto bc4 = medida.measureTime(alg, best_case4);
+    auto bc5 = medida.measureTime(alg, best_case5);
 
-    seriesWorst->append(N1, wc1);
-    seriesWorst->append(N2, wc2);
-    seriesWorst->append(N3, wc3);
-    seriesWorst->append(N4, wc4);
-    seriesWorst->append(N5, wc5);
+    // Agregar datos a las series, pares ordenados
+    seriesBest->append(N1, bc1);
+    seriesBest->append(N2, bc2);
+    seriesBest->append(N3, bc3);
+    seriesBest->append(N4, bc4);
+    seriesBest->append(N5, bc5);
+
 
     // Crear el gráfico y usar el nombre del algoritmo en el título
     QChart *chart = new QChart();

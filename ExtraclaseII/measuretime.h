@@ -37,7 +37,7 @@ public:
         }
         else if (func == "AllSortedLinkedListSearch") {
             start = std::chrono::high_resolution_clock::now();
-            int a = data.size() - 1;
+            int a = data[0];
             assearch.search(data, a);
         }
         else if (func == "BinaryTreeSearch") {

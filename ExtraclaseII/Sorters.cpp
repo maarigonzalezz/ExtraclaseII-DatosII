@@ -1,16 +1,21 @@
 #include "Sorters.h"
-void Sorters::bubbleSort(std::vector<int>& arr){
+void Sorters::bubbleSort(std::vector<int>& arr) {
     int n = arr.size();
+    bool swapped;
     for (int i = 0; i < n - 1; ++i) {
+        swapped = false;
         for (int j = 0; j < n - i - 1; ++j) {
             if (arr[j] > arr[j + 1]) {
                 std::swap(arr[j], arr[j + 1]);
+                swapped = true;
             }
         }
+        if (!swapped) // Si no hubo intercambios, ya está ordenado
+            break;
     }
 }
 
-// Insertion Sort
+// Selection Sort
 void Sorters::selectionSort(std::vector<int>& arr) {
     int n = arr.size();
     for (int i = 0; i < n - 1; ++i) {
