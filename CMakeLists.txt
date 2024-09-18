@@ -10,4 +10,6 @@ add_executable(ExtraclaseII_DatosII main.cpp
         ASLLSearch.h
         BinarySearchTree.cpp
         BinarySearchTree.h
+        MeasureTime.cpp
+        MeasureTime.h
 )

@@ -73,6 +73,12 @@ build CMakeFiles/ExtraclaseII_DatosII.dir/BinarySearchTree.cpp.obj: CXX_COMPILER
   OBJECT_DIR = CMakeFiles\ExtraclaseII_DatosII.dir
   OBJECT_FILE_DIR = CMakeFiles\ExtraclaseII_DatosII.dir
 
+build CMakeFiles/ExtraclaseII_DatosII.dir/MeasureTime.cpp.obj: CXX_COMPILER__ExtraclaseII_DatosII_unscanned_Debug C$:/Users/gonza/OneDrive/Desktop/ExtraclaseII-DatosII/MeasureTime.cpp || cmake_object_order_depends_target_ExtraclaseII_DatosII
+  DEP_FILE = CMakeFiles\ExtraclaseII_DatosII.dir\MeasureTime.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ExtraclaseII_DatosII.dir
+  OBJECT_FILE_DIR = CMakeFiles\ExtraclaseII_DatosII.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ExtraclaseII_DatosII
@@ -81,7 +87,7 @@ build CMakeFiles/ExtraclaseII_DatosII.dir/BinarySearchTree.cpp.obj: CXX_COMPILER
 #############################################
 # Link the executable ExtraclaseII_DatosII.exe
 
-build ExtraclaseII_DatosII.exe: CXX_EXECUTABLE_LINKER__ExtraclaseII_DatosII_Debug CMakeFiles/ExtraclaseII_DatosII.dir/main.cpp.obj CMakeFiles/ExtraclaseII_DatosII.dir/Sorters.cpp.obj CMakeFiles/ExtraclaseII_DatosII.dir/ASLLSearch.cpp.obj CMakeFiles/ExtraclaseII_DatosII.dir/BinarySearchTree.cpp.obj
+build ExtraclaseII_DatosII.exe: CXX_EXECUTABLE_LINKER__ExtraclaseII_DatosII_Debug CMakeFiles/ExtraclaseII_DatosII.dir/main.cpp.obj CMakeFiles/ExtraclaseII_DatosII.dir/Sorters.cpp.obj CMakeFiles/ExtraclaseII_DatosII.dir/ASLLSearch.cpp.obj CMakeFiles/ExtraclaseII_DatosII.dir/BinarySearchTree.cpp.obj CMakeFiles/ExtraclaseII_DatosII.dir/MeasureTime.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ExtraclaseII_DatosII.dir
