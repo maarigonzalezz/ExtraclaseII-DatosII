@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-bba92659b3788fc43dbf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ExtraclaseII",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ExtraclaseII::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ExtraclaseII-Debug-92b04435fe52897c097b.json",
+					"name" : "ExtraclaseII",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ExtraclaseII_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ExtraclaseII_autogen-Debug-0f974564b76140a4caa3.json",
+					"name" : "ExtraclaseII_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ExtraclaseII_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ExtraclaseII_autogen_timestamp_deps-Debug-8b3e86a7e759f843c681.json",
+					"name" : "ExtraclaseII_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/gonza/OneDrive/Desktop/ExtraclaseII-DatosII/ExtraclaseII/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+		"source" : "C:/Users/gonza/OneDrive/Desktop/ExtraclaseII-DatosII/ExtraclaseII"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
